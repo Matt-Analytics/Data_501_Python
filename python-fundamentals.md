@@ -249,3 +249,36 @@ print(new_text) # Outputs "Hello Person!"
 ```
 
 ## Control Flow
+Control flow in Python allows you to write code based on decisions, allowing you to control when and how code runs.
+
+1. **If Statements** <br>
+The `if` statement is used to execute code only if a condition is met.
+```python
+age = 23
+
+if age >= 18:
+    print("You can legally purchase alcohol in the UK.") # This will only execute if age >= 18
+```
+
+2. **Else and Elif** <br>
+The `else` and `elif` (else if) statements are used to provide additional conditions if the `if` condition isnt met.
+```python
+age = 16
+
+if age >= 18:
+    print("You are an adult.") 
+elif age >= 13:
+    print("You are a teenager.") # This executes because age = 16
+else:
+    print("You are a child.")
+```
+
+## Collections
+In Python, there are a variety of collections that allow you to store and manipulate multiple values at once.
+The most common of the collections are:
+
+1. **Lists** <br>
+
+A **list** or array, is an ordered collection of items, which can be any data type.
+
+2. **Dictionaries** <br>
