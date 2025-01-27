@@ -53,11 +53,13 @@ def load(output_file, transformed_data, columns_to_keep):
 
             csv_writer.writeheader()
             csv_writer.writerows(transformed_data)
+        return True
 
     except PermissionError:
         print(f"Error: You don't have permission to write to this file '{output_file}'") # If trying to overwrite existing file, this will happen if it is open
     except Exception as e:
         print(f"Error: An unexpected error occurred: {e}")
+        return False
 
 def main():
     input_file = "student_test_scores_extended(in).csv"
