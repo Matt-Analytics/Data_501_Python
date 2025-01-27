@@ -103,23 +103,23 @@ Python provides the option for a variety of numerical operations. Below are some
 
 - **Addition (`+`)**: Adds two numbers together
 ```python
-10 + 3 = 13
+print(10 + 3) # Outputs 13
 ```
 - **Subtraction (`-`)**: Subtracts one number from another
 ```python
-10 - 3 = 7
+print(10 - 3) # Outputs 7
 ```
 - **Multiplication (`*`)**: Multiplies two numbers together
 ```python
-10 * 3 = 30
+print(10 * 3) # Outputs 30
 ```
 - **Division (`/`)**: Divides one number by another, always resulting in a float
 ```python
-10 / 3 = 3.3333333333333335
+print(10 / 3) # Outputs 3.3333333333333335
 ```
 - **Modulo (`%`)**: Returns the remainder of the division of two numbers
 ```python
-10 % 3 = 1 # As 3 goes into 10 3 times with remainder 1
+print(10 % 3) # Outputs 1 as 3 goes into 10 3 times with remainder 1
 ```
 
 ## String Basics
@@ -208,3 +208,44 @@ print(x) # prints 20
 ```
 
 ## More on Strings
+In Python, there are a variety of ways strings can be manipulated to suit the needs of the user. Some examples are as follows:
+
+1. **Concatenation** <br>
+Concatenation is the process of joining two or more strings together. In Python, you can concatenate two strings with the `+` operator.
+```python
+hello = "Hello"
+world = "World!"
+# The hello and world string variables are concatenated with a space between
+print(hello + " " + world) # Outputs "Hello World!
+```
+
+You can also utilise the `str` function to convert other data types into strings:
+```python
+age = 23
+print("My age is " + str(age)) # Outputs "My age is 23"
+```
+2. **Escape Characters** <br>
+Escape characters are unique sequences that allow for using characters that may otherwise be difficult to type, like quotes or newlines
+```python
+print("Hello\nWorld!") # \n makes as new line
+
+"""
+Hello
+World!
+"""
+
+# You can use escape characters to use quotes within strings
+print("Python said, \"Hello World\"") # Outputs Python said, "Hello World"!
+```
+3. **String Methods** <br>
+Python comes with many built-in functions that can perform operations on strings. Some examples are:
+```python
+text = "Hello World!"
+print(text.lower())  # Output: hello world!
+print(text.upper())  # Output: HELLO WORLD!
+
+new_text = text.replace("World!", "Person!")
+print(new_text) # Outputs "Hello Person!"
+```
+
+## Control Flow
