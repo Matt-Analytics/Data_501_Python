@@ -66,8 +66,7 @@ def main():
     try:
         extracted_data, columns_to_keep = extract_data(input_file)
 
-        # If extraction step fails due to no data
-        if not extracted_data:
+        if not extracted_data: # If extraction step fails due to no data
             print("Stopping process due to not data")
             return
 
