@@ -24,11 +24,11 @@ print("\nQ1b\n")
 
 def factor(num1, num2):
     if num1 in divisor(num2):
-        return(True)
+        return True
     elif num2 in divisor(num1):
-        return (True)
+        return True
     else:
-        return(False)
+        return False
 
 print(factor(6, 12))
 # -------------------------------------------------------------------------------------- #
@@ -45,7 +45,7 @@ def alphabet_position(letter):
 
     for i in range(len(alphabet)):
         if alphabet[i] == letter:
-            return(i)
+            return  i
 
 
 print(alphabet_position("z"))
